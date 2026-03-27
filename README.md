@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# PHC Connect
 
 TODO: Document your project here
