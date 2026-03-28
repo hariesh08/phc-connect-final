@@ -45,6 +45,30 @@ const sidebarItems = [
 const DashboardHome = () => {
   const { profile } = useAuth();
   const phcId = profile?.phc_id;
+  const queryClient = useQueryClient();
+
+  useEffect(() => {
+    if (!phcId) return;
+
+    const channel = supabase.channel(`public:attendance:phc_${phcId}`)
+      .on(
+        'postgres_changes',
+        {
+          event: '*',
+          schema: 'public',
+          table: 'attendance',
+          filter: `phc_id=eq.${phcId}`,
+        },
+        () => {
+          queryClient.invalidateQueries({ queryKey: ["phc-dashboard-stats", phcId] });
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
+  }, [phcId, queryClient]);
 
   const { data: stats } = useQuery({
     queryKey: ["phc-dashboard-stats", phcId],
@@ -92,7 +116,7 @@ const DashboardHome = () => {
          const userData = doc.users as any; // Cast to bypass Supabase join inferred array type error
          return {
             name: userData?.name || "Unknown Doctor",
-            status: att ? att.status : "Pending",
+            status: att ? att.status : "Not Checked In",
             time: att ? new Date(att.checkin_time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : "—"
          };
       });
