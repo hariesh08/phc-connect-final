@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D47A1"/>
+      <stop offset="50%" style="stop-color:#1565C0"/>
+      <stop offset="100%" style="stop-color:#1E88E5"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#42A5F5;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#0D47A1;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.06">
+    <line x1="0" y1="0" x2="0" y2="630" stroke="white" stroke-width="1" />
+    <line x1="60" y1="0" x2="60" y2="630" stroke="white" stroke-width="1" />
+    <line x1="120" y1="0" x2="120" y2="630" stroke="white" stroke-width="1" />
+    <line x1="180" y1="0" x2="180" y2="630" stroke="white" stroke-width="1" />
+    <line x1="240" y1="0" x2="240" y2="630" stroke="white" stroke-width="1" />
+    <line x1="300" y1="0" x2="300" y2="630" stroke="white" stroke-width="1" />
+    <line x1="360" y1="0" x2="360" y2="630" stroke="white" stroke-width="1" />
+    <line x1="420" y1="0" x2="420" y2="630" stroke="white" stroke-width="1" />
+    <line x1="480" y1="0" x2="480" y2="630" stroke="white" stroke-width="1" />
+    <line x1="540" y1="0" x2="540" y2="630" stroke="white" stroke-width="1" />
+    <line x1="600" y1="0" x2="600" y2="630" stroke="white" stroke-width="1" />
+    <line x1="660" y1="0" x2="660" y2="630" stroke="white" stroke-width="1" />
+    <line x1="720" y1="0" x2="720" y2="630" stroke="white" stroke-width="1" />
+    <line x1="780" y1="0" x2="780" y2="630" stroke="white" stroke-width="1" />
+    <line x1="840" y1="0" x2="840" y2="630" stroke="white" stroke-width="1" />
+    <line x1="900" y1="0" x2="900" y2="630" stroke="white" stroke-width="1" />
+    <line x1="960" y1="0" x2="960" y2="630" stroke="white" stroke-width="1" />
+    <line x1="1020" y1="0" x2="1020" y2="630" stroke="white" stroke-width="1" />
+    <line x1="1080" y1="0" x2="1080" y2="630" stroke="white" stroke-width="1" />
+    <line x1="1140" y1="0" x2="1140" y2="630" stroke="white" stroke-width="1" />
+    <line x1="1200" y1="0" x2="1200" y2="630" stroke="white" stroke-width="1" />
+    <line x1="0" y1="60" x2="1200" y2="60" stroke="white" stroke-width="1" />
+    <line x1="0" y1="120" x2="1200" y2="120" stroke="white" stroke-width="1" />
+    <line x1="0" y1="180" x2="1200" y2="180" stroke="white" stroke-width="1" />
+    <line x1="0" y1="240" x2="1200" y2="240" stroke="white" stroke-width="1" />
+    <line x1="0" y1="300" x2="1200" y2="300" stroke="white" stroke-width="1" />
+    <line x1="0" y1="360" x2="1200" y2="360" stroke="white" stroke-width="1" />
+    <line x1="0" y1="420" x2="1200" y2="420" stroke="white" stroke-width="1" />
+    <line x1="0" y1="480" x2="1200" y2="480" stroke="white" stroke-width="1" />
+    <line x1="0" y1="540" x2="1200" y2="540" stroke="white" stroke-width="1" />
+  </g>
+
+  <!-- Decorative heartbeat line -->
+  <polyline points="0,400 150,400 200,400 230,340 260,460 290,380 320,420 350,400 600,400"
+    fill="none" stroke="white" stroke-width="2" opacity="0.12"/>
+  <polyline points="600,400 850,400 880,340 910,460 940,380 970,420 1000,400 1200,400"
+    fill="none" stroke="white" stroke-width="2" opacity="0.08"/>
+
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="80" fill="white" opacity="0.03"/>
+  <circle cx="1100" cy="530" r="120" fill="white" opacity="0.03"/>
+  <circle cx="1050" cy="100" r="60" fill="white" opacity="0.04"/>
+
+  <!-- Hospital cross icon (top-left) -->
+  <g transform="translate(80, 80)" opacity="0.1">
+    <rect x="-15" y="-40" width="30" height="80" rx="4" fill="white"/>
+    <rect x="-40" y="-15" width="80" height="30" rx="4" fill="white"/>
+  </g>
+
+  <!-- Hospital cross icon (bottom-right) -->
+  <g transform="translate(1100, 500)" opacity="0.08">
+    <rect x="-12" y="-32" width="24" height="64" rx="3" fill="white"/>
+    <rect x="-32" y="-12" width="64" height="24" rx="3" fill="white"/>
+  </g>
+
+  <!-- Wave bottom decoration -->
+  <path d="M0,560 C200,520 400,580 600,550 C800,520 1000,570 1200,540 L1200,630 L0,630 Z" fill="white" opacity="0.05"/>
+  <path d="M0,580 C200,550 400,600 600,570 C800,540 1000,590 1200,560 L1200,630 L0,630 Z" fill="white" opacity="0.04"/>
+
+  <!-- Main Hospital/Health Icon -->
+  <g transform="translate(600, 210)">
+    <!-- Shield background -->
+    <path d="M0,-65 C35,-65 60,-50 60,-20 C60,25 35,55 0,70 C-35,55 -60,25 -60,-20 C-60,-50 -35,-65 0,-65Z"
+      fill="white" opacity="0.15" stroke="white" stroke-width="2" stroke-opacity="0.3"/>
+    <!-- Cross inside shield -->
+    <rect x="-8" y="-30" width="16" height="55" rx="3" fill="white" opacity="0.9"/>
+    <rect x="-25" y="-12" width="50" height="16" rx="3" fill="white" opacity="0.9"/>
+  </g>
+
+  <!-- Title: PHC Connect -->
+  <text x="600" y="330" text-anchor="middle" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="800" font-size="72" fill="white" letter-spacing="2">
+    PHC Connect
+  </text>
+
+  <!-- Separator line -->
+  <rect x="480" y="350" width="240" height="3" rx="2" fill="white" opacity="0.4"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="400" text-anchor="middle" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="400" font-size="28" fill="white" opacity="0.85" letter-spacing="4">
+    Smart Healthcare Monitoring System
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="450" text-anchor="middle" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="300" font-size="18" fill="white" opacity="0.5" letter-spacing="2">
+    Attendance • Medicine Stock • Infrastructure • Service Quality
+  </text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="610" width="1200" height="20" fill="#0D47A1" opacity="0.5"/>
+  <text x="600" y="624" text-anchor="middle" font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="400" font-size="13" fill="white" opacity="0.6" letter-spacing="1">
+    phc-connect.vercel.app
+  </text>
+</svg>
